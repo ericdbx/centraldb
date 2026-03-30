@@ -33,7 +33,7 @@ exports.receberWebhook = async (req, res) => {
       return res.json({ ok: true });
     }
 
-    const data = payload.body?.data;
+    const data = payload.body.data;
 
     if (!data || !data.key) {
       return res.json({ ok: true });
